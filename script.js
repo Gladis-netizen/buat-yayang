@@ -72,20 +72,21 @@ function showSection(sectionNumber) {
 
 // Data teks surat yang akan diketik
 const message = `This isn’t a message meant to reopen old doors.
-
 It’s simply a quiet acknowledgment of something that once mattered.
 
-What we had was real, even if it didn’t last the way we once imagined.
-And I’ve come to learn that not everything meaningful is meant to stay forever.
+Because everything we shared was meaningful in its own way.
+And if time could ever be rewound,
+I think I would choose to return to the moment we first met,
+when everything felt simple, genuine, and untouched by endings.
 
 You were someone I cared for deeply, in a way that was honest and gentle.
 And even now, I don’t look back with regret — only with respect.
-Life moved us in different directions, and that’s okay.
 
+Life moved us in different directions, and that’s okay.
 I hope you’re becoming the person you’re meant to be.
+
 Some people don’t remain in our lives,
 but they remain a part of who we are.
-
 You will always be one of those people to me.
 I love you forever, my boy 💗`;
 
@@ -133,3 +134,4 @@ function typeWriter(elementId, text, speed) {
 
 
 // ... masukkan fungsi initGame() dan revealReason() kamu di bawah sini ...
+
