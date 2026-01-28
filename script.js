@@ -71,15 +71,23 @@ function showSection(sectionNumber) {
 }
 
 // Data teks surat yang akan diketik
-const message = `Happy birthday to the person who owns my heart, even from miles apart. 
+const message = `This isn’t a message meant to reopen old doors.
 
-I know you've been really busy lately with your studies, and maybe a bit tired or overwhelmed, but I just want you to know how proud I am of you. 
+It’s simply a quiet acknowledgment of something that once mattered.
 
-You've been giving your best, even when things get tough, and that's one of the many reasons I love you so much. 
+What we had was real, even if it didn’t last the way we once imagined.
+And I’ve come to learn that not everything meaningful is meant to stay forever.
 
-On your special day, I hope you take a little break and remember that you're so loved not just by the people around you, but especially by me. 
+You were someone I cared for deeply, in a way that was honest and gentle.
+And even now, I don’t look back with regret — only with respect.
+Life moved us in different directions, and that’s okay.
 
-I love you forever, my baby 💗`;
+I hope you’re becoming the person you’re meant to be.
+Some people don’t remain in our lives,
+but they remain a part of who we are.
+
+You will always be one of those people to me.
+I love you forever, my boy 💗`;
 
 function showSection(sectionNumber) {
     const sections = document.querySelectorAll('.container');
@@ -122,5 +130,6 @@ function typeWriter(elementId, text, speed) {
     }
     typing();
 }
+
 
 // ... masukkan fungsi initGame() dan revealReason() kamu di bawah sini ...
