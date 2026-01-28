@@ -1,0 +1,114 @@
+body {
+    background-color: #fdeef4;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #4a4a4a;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    margin: 20px auto; /* Agar posisi di tengah */
+    min-height: 300px; /* Memberi ruang agar tidak gepeng */
+}
+
+.hidden { display: none !important}
+
+h1, h2 { color: #d63384; }
+
+button {
+    background-color: #d63384;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button:hover { background-color: #b02a6b; }
+
+/* Memory Game Grid */
+.memory-game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card {
+    height: 80px;
+    background: #f8bbd0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    color: transparent;
+}
+
+.card.flipped {
+    background: white;
+    border: 2px solid #f8bbd0;
+    color: #d63384;
+}
+
+/* Reasons List */
+.reason-item {
+    background: #fff0f5;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+    border-left: 4px solid #d63384;
+}
+
+.reason-item span {
+    display: block;
+    font-size: 0.8em;
+    color: #888;
+    display: none;
+}
+
+/* Letter Box */
+.letter-box {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 0.95em;
+    animation: fadeIn 2s;
+}
+
+.letter-box {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 1rem;
+    min-height: 200px;
+    white-space: pre-line; /* Menjaga spasi antar baris */
+    border-left: 2px solid #d63384;
+    padding-left: 15px;
+}
+
+/* Efek kursor ngetik */
+.letter-box::after {
+    content: "|";
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

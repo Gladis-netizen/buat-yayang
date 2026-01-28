@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise for You</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="section1" class="container">
+        <h1>Hi my love</h1>
+        <div class="subtitle">I made this just for you!</div>
+        <p>Play a little game to unlock your surprises</p>
+        <button class="btn-main" onclick="showSection(2)">Start Game ➔</button>
+    </div>
+
+    <div id="section2" class="container hidden">
+        <h2>Let's play a little game before your surprise</h2>
+        <p>Tap two cards to find the matching pairs!</p>
+        
+        <div id="game-board" class="memory-game"></div>
+        
+        <button id="nextBtn" class="btn-main hidden" onclick="showSection(3)">Continue ➔</button>
+    </div>
+
+    <div id="section3" class="container hidden">
+        <h2>Reasons Why I Love You</h2>
+        <p>Tap each heart to reveal one reason.</p>
+        
+        <div class="reasons-list">
+            <div class="reason-item" onclick="revealReason(this)">
+                <strong>❤️ Your Dedication</strong>
+                <span>You never give up, even when things get hard.</span>
+            </div>
+            <div class="reason-item" onclick="revealReason(this)">
+                <strong>❤️ Your Tenderness</strong>
+                <span>You make me feel loved every day.</span>
+            </div>
+            <div class="reason-item" onclick="revealReason(this)">
+                <strong>❤️ Your Humor</strong>
+                <span>You always make me laugh.</span>
+            </div>
+            <div class="reason-item" onclick="revealReason(this)">
+                <strong>❤️ Your Beauty</strong>
+                <span>Your soul is the most beautiful thing I've known.</span>
+            </div>
+            <div class="reason-item" onclick="revealReason(this)">
+                <strong>❤️ Your Heart</strong>
+                <span>The way you love is everything I want.</span>
+            </div>
+            <div class="reason-item" onclick="revealReason(this)">
+                <strong>❤️ Our Future</strong>
+                <span>I can't wait to build a life with you.</span>
+            </div>
+        </div>
+        
+        <button class="btn-main" onclick="showSection(4)">Read My Letter ➔</button>
+    </div>
+
+    <div id="section4" class="container hidden">
+        <div class="letter-box">
+          <div id="typewriter-text" class="letter-box"></div>
+          <button id="replayBtn" class="btn-main hidden" onclick="location.reload">Lihat lagi❤️</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
